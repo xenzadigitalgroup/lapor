@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<header>
+  <h1>Laporan Pengguna</h1>
+</header>
+
 <div class="container">
-  <h2>Laporan Pengguna</h2>
   <form id="userReportForm">
     <div class="form-group">
       <label for="email">Email:</label>
@@ -19,6 +22,10 @@
       <label for="name">Nama:</label>
       <input type="text" id="name" name="name" required>
     </div>
+    <div class="form-group">
+      <label for="whatsapp">No WhatsApp:</label>
+      <input type="text" id="whatsapp" name="whatsapp" required pattern="\+62\d{9,12}" title="Masukkan nomor WhatsApp yang valid dimulai dengan +62 dan terdiri dari 10-13 digit angka">
+    </div>        
     <div class="form-group">
       <label for="complaint">Keluhan:</label>
       <textarea id="complaint" name="complaint" required></textarea>
